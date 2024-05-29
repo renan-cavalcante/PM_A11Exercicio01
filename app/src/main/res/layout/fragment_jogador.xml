@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogadorFragment" >
+
+    <EditText
+        android:id="@+id/etNomeJo"
+        android:layout_width="307dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etIdJo"
+        app:layout_constraintTop_toBottomOf="@+id/etIdJo" />
+
+    <Button
+        android:id="@+id/btnAtualizarJo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/atualizar"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeletarJo"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/btnInserirJo"
+        app:layout_constraintTop_toBottomOf="@+id/spTime" />
+
+    <Button
+        android:id="@+id/btnBuscarJo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/buscar"
+        app:layout_constraintStart_toEndOf="@+id/etIdJo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListarJogadores"
+        android:layout_width="310dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/listar"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeletarJo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnInserirJo"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtualizarJo" />
+
+    <EditText
+        android:id="@+id/etIdJo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirJo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/inserir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAtualizarJo" />
+
+    <Button
+        android:id="@+id/btnDeletarJo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/deletar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAtualizarJo" />
+
+    <TextView
+        android:id="@+id/tvJogadores"
+        android:layout_width="411dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarJogadores" />
+
+    <EditText
+        android:id="@+id/etDataNascJo"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/dataNasc"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/etNomeJo"
+        app:layout_constraintStart_toStartOf="@+id/etNomeJo"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeJo" />
+
+    <EditText
+        android:id="@+id/etPesoJo"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/peso"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etDataNascJo"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJo" />
+
+    <EditText
+        android:id="@+id/etAlturaJo"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etDataNascJo"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJo" />
+
+    <Spinner
+        android:id="@+id/spTime"
+        android:layout_width="307dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/etAlturaJo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPesoJo"
+        app:layout_constraintTop_toBottomOf="@+id/etDataNascJo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

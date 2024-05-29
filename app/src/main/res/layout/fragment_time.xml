@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeFragment">
+
+
+    <EditText
+        android:id="@+id/etCidadeTi"
+        android:layout_width="307dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/cidade"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etNomeTi"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeTi" />
+
+    <Button
+        android:id="@+id/btnBuscarTi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/buscar"
+        app:layout_constraintStart_toEndOf="@+id/etCodigoTi"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInserirTi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/inserir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAtualizarTi" />
+
+    <Button
+        android:id="@+id/btnAtualizarTi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/atualizar"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeletarTi"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/btnInserirTi"
+        app:layout_constraintTop_toBottomOf="@+id/etCidadeTi" />
+
+    <Button
+        android:id="@+id/btnDeletarTi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/deletar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAtualizarTi" />
+
+    <Button
+        android:id="@+id/btnListarTi"
+        android:layout_width="310dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/listar"
+        app:layout_constraintEnd_toEndOf="@+id/btnDeletarTi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnInserirTi"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtualizarTi" />
+
+    <TextView
+        android:id="@+id/tvTimes"
+        android:layout_width="411dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="40dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarTi" />
+
+    <EditText
+        android:id="@+id/etCodigoTi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="@string/codigo"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNomeTi"
+        android:layout_width="307dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etCodigoTi"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoTi" />
+</androidx.constraintlayout.widget.ConstraintLayout>
